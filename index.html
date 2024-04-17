@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4763137288.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" class="logo">
+                <ul id="sidemenu">
+                     <li><a href="#header">Home</a></li> 
+                     <li><a href="#about">About</a></li> 
+                     <li><a href="#expertise">Expertise</a></li> 
+                     <li><a href="https://sites.google.com/view/sheillas-portfolio/home">Capstone project</a></li>
+                    <!---- <li><a href="#portfolio">Portfolio</a></li> -->
+                     <li><a href="#contacts">Contacts</a></li>
+                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+    
+                <h1>Technical Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about--------->
+   
+    <div id="about">
+        <div class="container">
+             <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image2 .jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+    
+                        As a passionate and driven individual studying Business Information Technology, I possess a solid foundation in web and mobile application development. With a keen interest in leveraging technology to solve real-world problems, I am committed to honing my skills and staying updated with the latest industry trends.
+                        
+                        My journey in the field of technology began with a curiosity-driven exploration of coding languages and software development frameworks. Through coursework, projects, and extracurricular activities, I have gained hands-on experience in designing and developing responsive websites and intuitive mobile applications.
+                        
+                        I thrive in dynamic environments where creativity meets technical expertise. My ability to translate complex ideas into user-friendly digital solutions reflects my dedication to delivering exceptional user experiences.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing App/web Interfaces</li>
+                            <li><span>Web development</span><br>Developing websites</li>
+                            <li><span>App development</span><br>Building android native apps</li>
+
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Dedan Kimathi University Of Technology</li>
+                            <li><span>2014-2019</span><br>Sega Township Secondary School</li>
+                            <li><span>2005-2013</span><br>Busibula Primary School</li>
+
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June-August 2023</span><br>Training at Pezesha Africa LImited Company(Internship)</li>
+                            <li><span>July-August 2022</span><br>Training at Dedan Kimathi University(Attachment)</li>
+                            <li><span>Currently</span><br>Building android native apps</li>
+
+                        </ul>
+                      </div>
+                </div>
+
+             </div>
+        </div>
+    </div>
+    <!-------------------services-------------->
+    <div id="expertise">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-wordpress fa-spin"></i>
+                    <h2>Web Design</h2>
+                    <p>Programming languages: HTML,CSS, JavaScript</p>
+                    <p>I am a Front-End web developer</p>
+                    <p>I have experinece with the version control sytems i.e Git and bitbucket which gives me the ability to collaborate effectively with other team members</p>
+                    <p>Builds responsive and interractive web user interfaces</p>
+                         <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop fa-spin"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designs web and app user-friendly user interfaces.</p>
+                    <p>Tool used fore desinging: Figma</p>
+                         <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios fa-spin"></i>
+                    <h2>App Design</h2>
+                    <p>Programming languages: Java, Kotlin</p>
+                    <P>Databases: MySQl, Firebase</P>
+                    <P>Builds responsive and interactive app user interface</P>
+                         <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio----------------------->
+  <!---  <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to poeple arround the world. Download it from the play store</p>
+                        <a href=""><i class="fa-duotone fa-link"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to poeple arround the world. Download it from the play store</p>
+                        <a href=""><i class="fa-duotone fa-link"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to poeple arround the world. Download it from the play store</p>
+                        <a href=""><i class="fa-duotone fa-link"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+    </div>-->
+ 
+   
+
+    
+        
+    </div>
+        </div>
+    </div>
+    <!----------------------------contacts-------------->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-regular fa-paper-plane-top"></i>Sheilla.atieffie@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0746902571</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sheilla-atieno-bbb650242/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Fie99"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="C:\Users\sheil\Documents\MyDocs" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email " name="email" placeholder="Your Email" required>
+                     <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                     <button types="submit" class="btn btn2">Submit</button>
+                   </form> 
+                   <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Sheilla.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwdIhbP4vuVj2i4fkixH9O2GKEgNf8wFMOJOjhAXPVjgRTqbyS8dUm-jnkD8lAuQswI0Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=" "
+
+                },5000 )
+                form.reset()
+                }
+
+             )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const slider = document.querySelector('.slider');
+const numSlides = slides.length;
+const slideWidth = slides[0].offsetWidth;
+
+slider.style.width = `${numSlides * slideWidth}px`;
+slider.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+
+function showSlide(slideIndex) {
+    if (slideIndex < 0) {
+        slideIndex = 0;
+    }
+    if (slideIndex >= numSlides) {
+        slideIndex = 0;
+    }
+
+    // Calculate the new position for the slider
+    const newPosition = -slideIndex * slideWidth;
+
+    // Slide animation using CSS transition
+    slider.style.transition = 'transform 1s ease-in-out';
+    slider.style.transform = `translateX(${newPosition}px)`;
+    currentSlide = slideIndex;
+}
+
+function autoSlide() {
+    showSlide(currentSlide + 1); // Move to the next image
+    setTimeout(autoSlide, 2000); // Change image every 5 seconds (adjust as needed)
+}
+
+autoSlide();     
+      </script>
+
+
+</script>
+</body>
+</html>
